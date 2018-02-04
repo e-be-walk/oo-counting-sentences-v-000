@@ -6,6 +6,11 @@ class String
 
   def sentence?(words)
     self.words = sentence
+
+    if sentence.end_with?(".")
+      true
+    else
+      false
   end
 
   def question?
