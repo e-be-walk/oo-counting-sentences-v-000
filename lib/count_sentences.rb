@@ -2,8 +2,10 @@ require 'pry'
 
 class String
 
-  def sentence?
-    
+  attr_accessor :sentence, :question, :exclamation
+
+  def sentence?(words)
+    self.words = sentence
   end
 
   def question?
